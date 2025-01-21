@@ -28,7 +28,8 @@ def main():
     turn = False  # False for player 1's turn, True for player 2's turn. Player 1 first.
     print("X = Player 1")
     print("O = Player 2")
-    for n in range(9):
+    for n in range(9):#循环最多进行9次，因为井字棋只有9个单元格。
+每轮切换玩家
         turn = not turn  # Switch turns
         if not turn:
             print("Player 1: ", end="")
